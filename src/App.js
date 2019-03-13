@@ -8,6 +8,7 @@ import {db} from './Services/firebase/setup';
 import Header from './Component/Global/Header';
 import Footer from './Component/Global/Footer';
 import Content from './Component/Global/Content';
+import NameForm from './Component/Global/NameForm';
 
 //Data
 import items from './Data/Menu'
@@ -90,9 +91,10 @@ class app extends Component {
        <Header title = "Codejobs" items = {items} />
        <Content />
        <Footer copyrigth = "&copy; moluchita " />
+       < NameForm />
       </div>
     );
   }
 }
 
-export default app;
+export default App;
