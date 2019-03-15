@@ -5,9 +5,14 @@ import {db} from './Services/firebase/setup';
 
 //Componentes
 import NameForm from './Component/NameForm';
-
+// import CardsMenu from './Component/Cards'
+import { Button } from 'react-bootstrap';
+import './App.css';
+import Navigation from './Component/NavProyect';
+// import Content from './Component/Content';
 //Data
-
+// import {Menu} from './Component/Menu.json'
+// console.log(Menu)
 
 
 
@@ -15,21 +20,18 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              Burguer Queen
-            </h3>
-          </div>
-          <div class="panel-body">
+      <div>
+         < Navigation />
+         <br></br>
           < NameForm/>
-          <div class= "btnMenu">
-          <button variant="danger" type="submit" class="btn btn-success"> Desayuno  </button>
+          {/* <CardsMenu/> */}
+          {/* <Content /> */}
+
+          <div className="col-md-4">
+          <button variant="danger"  type="submit" className="btn btn-success"> Desayuno  </button>
+          <button type="submit" className="btn btn-success"> Almuerzo y Cena </button>
           </div>
-          <div class= "btnMenu">
-          <button type="submit" class="btn btn-success"> Almuerzo y Cena </button>
-          </div>
-          </div>
+
       </div>
     );
   }
