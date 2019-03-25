@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import db from '../Services/firebase/setup';
 
 
@@ -42,7 +41,7 @@ class NameForm extends Component {
             Nombre
             <input type="text" value={this.state.name} onChange={this.handleChange} />
           </label>
-          <input type="submit" value="Submit" onClick= {this.handleSubmit} />
+          <input type="submit" value="Tomar orden" onClick= {this.handleSubmit} />
         </form>
       );
     }

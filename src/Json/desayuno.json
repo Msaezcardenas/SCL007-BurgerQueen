@@ -1,0 +1,16 @@
+{ 
+"desayuno" : [{
+    "item": "cafe americano", 
+    "precio": 500
+    },{  
+    "item": "cafe con leche",
+    "precio": 700
+    },{  
+    "item": "sandwich de jamon y queso",
+    "precio": 1000
+    },{ 
+    "item":"jugo natural",
+    "precio": 700
+    }
+]
+}

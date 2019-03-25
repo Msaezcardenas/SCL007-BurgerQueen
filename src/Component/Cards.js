@@ -1,42 +1,38 @@
 // import React, { Component } from 'react';
-// import db from '../Services/firebase/setup';
-// import PropTypes from 'prop-types';
+// // import db from '../Services/firebase/setup';
+// // import PropTypes from 'prop-types';
 
-// import {Menu} from './Menu.json';
+// import {Menu} from '../Json/Menu.json'
 // // console.log(Menu)
 
 // class CardsMenu extends Component {
 //     constructor() {
 //       super();
 //       this.state = {
-//         Menu: ''
+//         Menu
 //       }
-//     };
+//     }
 
 //     render () {
 //         //this.state.menu= para acceder al menu.json
 //         //Map para recorrer el json
-//         const MenuRest= this.state.Menu.map((todo,i)=>{
+//         const Menu= this.state.Menu.map(( food, i )=>{
 //              return (
 //                  <div className="col-md-4">
 //                   <div className="card">
-//                     <div className="card-header">
-//                       <h3> {Menu.name} </h3>
-//                  </div>
-//                     <div className="card-body">
-//                       <p> {Menu.cost}</p>
-//                     </div>
+//                   {food.desayuno}
 //                  </div>
 //                  </div>
 //              )
 //         })
     
 //     return (
-//         <div className = "App"> 
-//         <div>
-//         {MenuRest}
-//         </div>
-//         </div>
+//         <div className = "container">
+//         <div className="col-md-4">
+//         { Menu }
+//        </div>
+//        </div>
+
 //     );
 // }
 // }
