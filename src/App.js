@@ -10,7 +10,7 @@ import './App.css';
 import Navigation from './Component/NavProyect';
 // import Content from './Component/Content';
 import Desayuno from './Component/Desayuno';
-
+import RestoDia from './Component/RestoDia';
 
 
 class App extends Component {
@@ -24,6 +24,7 @@ class App extends Component {
           {/* <CardsMenu/> */}
           {/* <Content /> */}
           < Desayuno />
+          < RestoDia />
 
       </div>
     );

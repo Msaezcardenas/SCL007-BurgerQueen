@@ -1,102 +1,75 @@
 {
-    "restoDia": {
-        "hamburguesas": {
-            "simples": {
-                "res": {
-                    "hamburguesa simple res sola": {
-                        "precio": 1500
-                    },
-                    "hamburguesa simple res con queso": {
-                        "precio": 2000
-                    },
-                    "hamburguesa simple res con huevo": {
-                        "precio": 2000
-                    }
-                },
-                "pollo": {
-                    "hamburguesa simple pollo sola": {
-                        "precio": 1500
-                    },
-                    "hamburguesa simple pollo con queso": {
-                        "precio": 2000
-                    },
-                    "hamburguesa simple pollo con huevo": {
-                        "precio": 2000
-                    }
-                },
-                "vegetariana": {
-                    "hamburguesa simple vegetariana sola": {
-                        "precio": 1500
-                    },
-                    "hamburguesa simple vegetariana con queso": {
-                        "precio": 2000
-                    },
-                    "hamburguesa simple vegetariana con huevo": {
-                        "precio": 2000
-                    }
-                }
+        "restoDia":[{
+                "item":"Hamburguesa Simple",
+                "tipo":"res",
+                "precio":"$1500"
             },
-            "dobles": {
-                "res": {
-                    "hamburguesa doble res sola": {
-                        "precio": 2500
-                    },
-                    "hamburguesa doble res con queso": {
-                        "precio": 3000
-                    },
-                    "hamburguesa doble res con huevo": {
-                        "precio": 3000
-                    }
-                },
-                "pollo": {
-                    "hamburguesa doble pollo sola": {
-                        "precio": 2500
-                    },
-                    "hamburguesa doble pollo con queso": {
-                        "precio": 3000
-                    },
-                    "hamburguesa doble pollo con huevo": {
-                        "precio": 3000
-                    }
-                },
-                "vegetariana": {
-                    "hamburguesa doble vegetariana sola": {
-                        "precio": 2500
-                    },
-                    "hamburguesa doble vegetariana con queso": {
-                        "precio": 3000
-                    },
-                    "hamburguesa doble vegetariana con huevo": {
-                        "precio": 3000
-                    }
-                }
-            }
-        },
-        "acompañamientos": {
-            "papas fritas": {
-                "precio": 500
+            {
+                "item":"Hamburguesa Doble",
+                "tipo":"res",
+                "precio":"$2500"
+            }, 
+            {
+                "item":"Hamburguesa Simple",
+                "tipo":"pollo",
+                "precio":"$1500"
             },
-            "onion rings": {
-                "precio": 500
-            }
-        },
-        "bebidas": {
-            "500ml": {
-                "agua 500ml": {
-                    "precio": 500
-                },
-                "gaseosa 500ml": {
-                    "precio": 700
-                }
+            {
+                "item":"Hamburguesa Doble",
+                "tipo":"pollo",
+                "precio":"$2500"
             },
-            "750ml": {
-                "agua 750ml": {
-                    "precio": 800
-                },
-                "gaseosa 750ml": {
-                    "precio": 1000
-                }
+            {
+                "item":"Hamburguesa Simple",
+                "tipo":"veg",
+                "precio":"$1500"
+
+            },
+            {
+                "item":"Hamburguesa Doble",
+                "tipo":"veg",
+                "precio":"$2500"
+
+            },
+            {
+                "item":"Acompañamiento",
+                "tipo":"Papas fritas",
+                "precio":"$500"
+            },
+            {
+                "item":"Acompañamiento",
+                "tipo":"Onion Rings",
+                "precio":"$500"
+            },
+            {
+                "item":"Bebidas",
+                "tipo":"Agua 500ml",
+                "precio":"$500"
+            },
+            {
+                "item":"Bebidas",
+                "tipo":"Agua 750ml",
+                "precio":"$800"
+            },
+            {
+                "item":"Bebidas",
+                "tipo":"Gaseosa 500ml",
+                "precio":"$700"
+            },
+            {
+                "item":"Bebidas",
+                "tipo":"Agua 750ml",
+                "precio":"$1000"
+            },
+            {
+                "item":"Extra",
+                "tipo":"Queso",
+                "precio":"$500"
+            },
+            {
+                "item":"Extra",
+                "tipo":"Huevo",
+                "precio":"$500"
             }
-        }
-    }
+        ]
 }
