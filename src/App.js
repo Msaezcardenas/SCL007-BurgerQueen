@@ -3,14 +3,17 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 
 
-//Componentes
-import NameForm from './Component/NameForm';
-// import CardsMenu from './Component/Cards'
+//CSS
 import './App.css';
+
+
+//Componentes
 import Navigation from './Component/NavProyect';
-// import Content from './Component/Content';
+import NameForm from './Component/NameForm';
 import Desayuno from './Component/Desayuno';
 import RestoDia from './Component/RestoDia';
+// import Content from './Component/Content';
+
 
 
 class App extends Component {
@@ -21,8 +24,6 @@ class App extends Component {
          < Navigation />
          <br></br>
           < NameForm/>
-          {/* <CardsMenu/> */}
-          {/* <Content /> */}
           < Desayuno />
           < RestoDia />
 

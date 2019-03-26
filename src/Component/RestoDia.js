@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import {restoDia} from '../Json/restoDia.json'
+import {restoDia} from '../Json/restoDia.json';
+import {Card} from 'react-bootstrap';
 
 
 class RestoDia extends Component{
@@ -21,28 +22,23 @@ class RestoDia extends Component{
             ...this.state,
             restoDiaArr: this.state.restoDia.map((food,i) => {
                 return(
-                    <div className= 'container btnDesayuno'>
-                       <div className='col-md-4'>
-                       <div className='card'>
-
-                            <div className='btn btn-success'>
-                            {food.precio}
-                            </div> 
-                        </div>
-                        </div>
-                    </div>)
+                <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Title> {food.item} </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted"> {food.tipo}</Card.Subtitle>
+                    <Card.Text>
+                        {food.precio}
+                    </Card.Text>
+                    </Card.Body>
+                    </Card>)
             })
         })
     }
     render(){
         return(
             <div className= 'container btnRestoDia'>
-            <div className='col-md-4'>
-            <div className='card'>
                 <button type='button' className='btn btn-success' onClick={this.comidaDia}> Menu del día </button>
                 {this.state.restoDiaArr} 
-        </div>
-        </div>
         </div>
         )
     }
