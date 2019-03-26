@@ -24,7 +24,7 @@ class App extends Component {
          < Navigation />
          <br></br>
           < NameForm/>
-          < Desayuno />
+          < Desayuno /> 
           < RestoDia />
 
       </div>

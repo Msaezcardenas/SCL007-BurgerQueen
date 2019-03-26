@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {desayuno} from '../Json/desayuno.json'
-import {Card} from 'react-bootstrap';
+import {Card, Container, Row, Col} from 'react-bootstrap';
 
 
 class Desayuno extends Component{
@@ -33,10 +33,14 @@ class Desayuno extends Component{
     }
     render(){
         return(
-            <div className= 'container btnDesayuno'>
+            <Container className = 'menuStyle'>
+            <Row className = 'Menu'>
+            <Col sm = "6">
                 <button type='button' className='btn btn-success' onClick={this.comida}>Desayuno</button>
                 {this.state.desayunoArr} 
-        </div>
+                </Col>
+            </Row>
+        </Container>
         )
     }
 }

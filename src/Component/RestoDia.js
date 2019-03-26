@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {restoDia} from '../Json/restoDia.json';
-import {Card} from 'react-bootstrap';
+import {Card, Container,Row, Col} from 'react-bootstrap';
 
 
 class RestoDia extends Component{
@@ -36,10 +36,14 @@ class RestoDia extends Component{
     }
     render(){
         return(
-            <div className= 'container btnRestoDia'>
+           <Container className= 'menuStyle'>
+            <Row className = 'Menu'>
+            <Col sm = "6">
                 <button type='button' className='btn btn-success' onClick={this.comidaDia}> Menu del día </button>
                 {this.state.restoDiaArr} 
-        </div>
+              </Col>
+                </Row>
+           </Container>
         )
     }
 }
