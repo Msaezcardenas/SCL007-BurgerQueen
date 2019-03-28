@@ -10,7 +10,7 @@ class Desayuno extends Component{
         //agregamos constructor y super para cambiar el estado del componente
         this.state={
             desayuno,
-            desayunoArr: []
+            desayunoArr: [],
         }
         // this= a este componente 
         //.bind = "atale", this (a este componente).comida.bind atale la función comida
@@ -21,13 +21,13 @@ class Desayuno extends Component{
         this.setState({
             ...this.state,
             desayunoArr: this.state.desayuno.map((food,i) => {
-                return(
+                return(<button type='button' >
                     <Card style={{ width: '18rem' }}>
                     <Card.Body>
-                        <Card.Title> {food.item} </Card.Title>
+                     <Card.Title> {food.item} </Card.Title> 
                         <Card.Subtitle className="mb-2 text-muted"> {food.precio} </Card.Subtitle>
                     </Card.Body>
-                    </Card>)
+                    </Card> </button> )
             })
         })
     }

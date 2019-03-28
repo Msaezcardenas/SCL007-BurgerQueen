@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import db from '../Services/firebase/setup';
 import { Link } from 'react-router-dom';
 import Navigation from '../Component/NavProyect';
+import RestoDia from '../Component/RestoDia';
+import Desayuno from '../Component/Desayuno';
+import {Container, Row, Col} from 'react-bootstrap';
+
 
 class Create extends Component {
 
@@ -62,7 +66,17 @@ class Create extends Component {
               </div>
               <div class="form-group">
                 <label for="description">Pedido:</label>
-                <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Pedido" cols="80" rows="3">{description}</textArea>
+                <Container className = 'menuStyle'>
+            <Row className = 'Menu'>
+            <Col sm = "6">
+             < RestoDia />
+             </Col>
+             <Col sm = "6">
+                <Desayuno  onChange= {this.onChange} value= {description} />
+               {/* <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Pedido" cols="80" rows="3">{description}</textArea> */}
+               </Col>
+            </Row>
+           </Container>
               </div>
               <div class="form-group">
                 <label for="author">Precio:</label>
