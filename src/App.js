@@ -1,6 +1,6 @@
 //Dependencias
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+
 
 
 //CSS
@@ -11,7 +11,6 @@ import './App.css';
 import Navigation from './Component/NavProyect';
 import Desayuno from './Component/Desayuno';
 import RestoDia from './Component/RestoDia';
-// import Content from './Component/Content';
 
 
 

@@ -22,6 +22,7 @@ class Desayuno extends Component{
             <Container className = 'menuStyle'>
             <Row className = 'Menu'>
             <Col sm = "6">
+            <h1> Desayuno </h1>
             {this.state.desayuno.map(elem => (<DesayunoBtn desayunoData={elem}/>))}
             </Col>
             </Row>
@@ -30,16 +31,18 @@ class Desayuno extends Component{
     }
 }
 
-const mapStateToProps = (state)=>({
-    ...state
-});
+// const mapStateToProps = (state)=>({
+//     ...state
+// });
 
-const mapDispatchToProps = (dispatch) => ({
-    addItemToMenu: addOrder(dispatch)
-});
+// const mapDispatchToProps = (dispatch) => ({
+//     addItemToMenu: addOrder(dispatch)
+// });
 
 
-export default connect (
-    mapStateToProps,
-    mapDispatchToProps
-) (Desayuno);
+// export default connect (
+//     mapStateToProps,
+//     mapDispatchToProps
+// ) (Desayuno);
+
+export default Desayuno
