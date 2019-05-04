@@ -21,7 +21,7 @@ class RestoDia extends Component{
         this.setState({
             ...this.state,
             restoDiaArr: this.state.restoDia.map((food,i) => {
-                return(
+                return(<button type='button' >
                 <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title> {food.item} </Card.Title>
@@ -30,7 +30,7 @@ class RestoDia extends Component{
                         {food.precio}
                     </Card.Text>
                     </Card.Body>
-                    </Card>)
+                    </Card> </button>)
             })
         })
     }
