@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import {desayuno} from '../Json/desayuno.json'
+import {connect} from 'react-redux';
+import {desayuno} from '../Json/desayuno.json';
 import {Card, Container, Row, Col} from 'react-bootstrap';
+import {addOrder} from  '../actions/menuActions';
+import DesayunoBtn from './Btn_desayuno';
 
 
 class Desayuno extends Component{
@@ -12,37 +15,34 @@ class Desayuno extends Component{
             desayuno,
             desayunoArr: [],
         }
-        // this= a este componente 
-        //.bind = "atale", this (a este componente).comida.bind atale la función comida
-        this.comida = this.comida.bind(this);
     }
-    comida(){
-        //this.setState = el estado final de mi componente
-        this.setState({
-            ...this.state,
-            desayunoArr: this.state.desayuno.map((food,i) => {
-                return(<button type='button' >
-                    <Card style={{ width: '18rem' }}>
-                    <Card.Body>
-                     <Card.Title> {food.item} </Card.Title> 
-                        <Card.Subtitle className="mb-2 text-muted"> {food.precio} </Card.Subtitle>
-                    </Card.Body>
-                    </Card> </button> )
-            })
-        })
-    }
+
     render(){
         return(
             <Container className = 'menuStyle'>
             <Row className = 'Menu'>
             <Col sm = "6">
-                <button type='button' className='btn btn-success' onClick={this.comida}>Desayuno</button>
-                {this.state.desayunoArr} 
-                </Col>
+            <h1> Desayuno </h1>
+            {this.state.desayuno.map(elem => (<DesayunoBtn desayunoData={elem}/>))}
+            </Col>
             </Row>
         </Container>
         )
     }
 }
 
-export default Desayuno;
+// const mapStateToProps = (state)=>({
+//     ...state
+// });
+
+// const mapDispatchToProps = (dispatch) => ({
+//     addItemToMenu: addOrder(dispatch)
+// });
+
+
+// export default connect (
+//     mapStateToProps,
+//     mapDispatchToProps
+// ) (Desayuno);
+
+export default Desayuno
